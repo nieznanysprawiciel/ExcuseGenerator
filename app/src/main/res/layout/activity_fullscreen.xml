@@ -14,6 +14,7 @@
         android:id="@+id/fullscreen_content"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="40sp"
         android:gravity="center|top"
         android:keepScreenOn="true"
         android:text="@string/background_string"
@@ -45,7 +46,7 @@
             <TextView
                 android:id="@+id/ExcuseText"
                 android:layout_width="363dp"
-                android:layout_height="181dp"
+                android:layout_height="281dp"
                 android:text="@string/bad_excuse"
                 android:textColor="#FFFFFF"
                 android:textSize="35sp" />
@@ -68,7 +69,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="Send Excuse" />
+                android:text="@string/send_button" />
 
         </LinearLayout>
 
