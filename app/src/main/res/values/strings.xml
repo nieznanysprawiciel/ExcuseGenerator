@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ExcuseGenerator</string>
+
+    <string name="background_string">Excuse Generator</string>
+
+    <string name="header">Nie mogę przyjechać, bo</string>
+    <string name="bad_excuse">jestem niemiłym prostakiem.</string>
+</resources>
