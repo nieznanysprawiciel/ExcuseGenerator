@@ -36,14 +36,6 @@
             android:orientation="vertical">
 
             <TextView
-                android:id="@+id/Header"
-                android:layout_width="wrap_content"
-                android:layout_height="66dp"
-                android:text="@string/header"
-                android:textColor="#FFFFFF"
-                android:textSize="35sp" />
-
-            <TextView
                 android:id="@+id/ExcuseText"
                 android:layout_width="363dp"
                 android:layout_height="281dp"

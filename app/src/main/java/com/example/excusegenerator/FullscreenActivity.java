@@ -74,6 +74,15 @@ public class FullscreenActivity extends AppCompatActivity {
             hide();
         }
     };
+
+    private void RandomizeText()
+    {
+        String text = generator.Generate();
+
+        TextView excuseDisplay = findViewById(R.id.ExcuseText);
+        excuseDisplay.setText(text);
+    }
+
     /**
      * Touch listener to use for in-layout UI controls to delay hiding the
      * system UI. This is to prevent the jarring behavior of controls going away
@@ -86,10 +95,7 @@ public class FullscreenActivity extends AppCompatActivity {
             switch(motionEvent.getAction())
             {
                 case MotionEvent.ACTION_UP:
-                    String text = generator.Generate();
-
-                    TextView excuseDisplay = findViewById(R.id.ExcuseText);
-                    excuseDisplay.setText(text);
+                    RandomizeText();
                     break;
             }
 
@@ -124,6 +130,8 @@ public class FullscreenActivity extends AppCompatActivity {
         // Initialize generator
         generator = new Excuses();
         generator.LoadSegments( getApplicationContext() );
+
+        RandomizeText();
     }
 
     @Override
