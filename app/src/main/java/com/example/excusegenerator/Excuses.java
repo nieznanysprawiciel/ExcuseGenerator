@@ -32,10 +32,10 @@ public class Excuses
 
     private String GenerateImpl( List< String > part1, List< String > part2, List< String > part3 )
     {
-//        String[] examples = {"Text 1", "Text 2", "Text 3"};
-//        idx = (idx + 1) % examples.length;
-//        return examples[ idx ];
-        return part1.get(0) + part2.get(0) + part3.get(0);
+        String[] examples = {"Text 1", "Text 2", "Text 3"};
+        idx = (idx + 1) % examples.length;
+        return examples[ idx ];
+//        return part1.get(0) + part2.get(0) + part3.get(0);
     }
 
     private List< String > LoadSegment( Context context, int id )
